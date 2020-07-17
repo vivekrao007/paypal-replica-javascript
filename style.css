@@ -1,0 +1,180 @@
+header {
+  border-bottom: 1px solid rgba(161, 154, 154, 0.3);
+}
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+/*  home banner image styling by overlaying text over it */
+.banner-container {
+  position: relative;
+  height: 550px;
+}
+.banner-container img {
+  max-width: 100%;
+  min-width: 100%;
+  background-size: cover;
+  min-height: 100%;
+  max-height: 100%;
+}
+.banner-overlay {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+}
+.banner-text {
+  font-size: 1.25rem;
+  width: 55%;
+}
+
+/* this media query is used to style banner image in the home screen */
+@media screen and (max-width: 768px) {
+  .banner-container {
+    position: static;
+    height: 100%;
+  }
+  .banner-overlay {
+    padding-top: 20px;
+    float: none;
+    height: 100%;
+    background-size: cover;
+    position: static;
+    text-align: center;
+  }
+  .banner-overlay h1 {
+    font-size: 16px;
+  }
+  .text-sm-black {
+    color: black !important;
+  }
+  .banner-text {
+    width: 100%;
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+}
+.logo-image {
+  width: 135px;
+  height: 40px;
+}
+.nav-buttons {
+  border-radius: 25px;
+}
+
+/* css for MISC and generic styles */
+.covid-info {
+  background-color: #fff2dc;
+}
+
+.b-dark-gray {
+  background-color: #eaeced;
+}
+.b-light-gray {
+  background-color: #f5f7fa;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+.heading-lg {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+.font-sm {
+  font-size: 0.8rem;
+}
+
+.signup-btn-lg {
+  padding: 10px 100px;
+  border-radius: 25px;
+}
+
+.video-section {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+#paypal-working-video p {
+  font-size: 1.25rem;
+  font-weight: 480;
+}
+
+#how-paypal-works {
+  background-color: #009cde;
+  background-image: radial-gradient(
+    circle farthest-side at center bottom,
+    #009cde,
+    #003087 125%
+  );
+  color: #fff;
+}
+
+/* css for footer section  */
+.social-media-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid;
+  line-height: 40px;
+  text-align: center;
+  background-color: #6c7378;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.social-media-icon.fb:hover {
+  background-color: #3b5998;
+}
+.social-media-icon.tw:hover {
+  background-color: #1da1f2;
+}
+.social-media-icon.yt:hover {
+  background-color: #ff0000;
+}
+.social-media-icon.ig:hover {
+  background-color: #833ab4;
+}
+.footer-links {
+  list-style-type: none;
+}
+
+/* css for section : How PayPal works   */
+.step-icon {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.img-container {
+  height: 400px;
+}
+
+.img-container img {
+  height: 100%;
+  max-width: 100%;
+}
+
+/*  styles for workflow section on how paypal works */
+
+.workflow-item {
+  cursor: pointer;
+}
+.workflow-item.selected .step-icon {
+  background-color: white;
+  color: black;
+}
+.workflow-item:hover .step-icon {
+  border: 4px solid white;
+  line-height: 40px;
+}
